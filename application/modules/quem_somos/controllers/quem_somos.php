@@ -14,6 +14,9 @@ class Quem_somos extends CI_controller{
 		$this->load->view('topo');
 		$this->load->view('quem_somos');
 		$this->load->view('footer');
+		
+		$this -> output -> cache(60*24); // Se for dinamico remover essa linha
+		
 
     }
 

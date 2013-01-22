@@ -14,6 +14,9 @@ class Fale_conosco extends CI_controller{
 		$this->load->view('topo');
 		$this->load->view('fale_conosco');
 		$this->load->view('footer');
+		
+		$this -> output -> cache(60*24); // Se for dinamico remover essa linha
+		
 
     }
 
@@ -72,7 +75,7 @@ class Fale_conosco extends CI_controller{
 		            		<strong>Estado:</strong> '.$estado.'<br />
 		            		<strong>Telefone:</strong> '.$telefone.'<br />
 		                    <strong>Assunto:</strong> '.$assunto.'<br />
-		            		<strong>Comentários:</strong> '.$mensagem.'<br />
+		            		<strong>Coment?rios:</strong> '.$mensagem.'<br />
 		            	</p>
 		                </div>';
 

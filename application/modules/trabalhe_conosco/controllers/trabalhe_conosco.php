@@ -14,6 +14,8 @@ class Trabalhe_conosco extends CI_controller{
 		$this->load->view('topo');
 		$this->load->view('trabalhe_conosco');
 		$this->load->view('footer');
+		
+		$this -> output -> cache(60*24); // Se for dinamico remover essa linha
 
     }
 
