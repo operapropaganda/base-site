@@ -14,6 +14,8 @@ class Cadastre_se extends CI_controller{
 		$this->load->view('topo');
 		$this->load->view('cadastre_se');
 		$this->load->view('footer');
+		
+		$this -> output -> cache(60*24); // Se for dinamico remover essa linha
 
     }
 
